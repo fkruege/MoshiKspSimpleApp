@@ -8,13 +8,12 @@ repositories {
     google()
 }
 
-
 gradlePlugin {
     plugins {
 
         register("moshi-kapt") {
-            id = "amex.gradle.moshi-kapt"
-            implementationClass = "amex.gradle.MoshiKaptPlugin"
+            id = "moshikspsimpleapp.gradle.moshi-kapt"
+            implementationClass = "moshikspsimpleapp.gradle.MoshiKaptPlugin"
         }
     }
 }
