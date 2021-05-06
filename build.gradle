@@ -2,6 +2,7 @@
 buildscript {
   ext.kotlin_version = "1.5.0"
   repositories {
+    gradlePluginPortal()
     mavenCentral()
     jcenter()
     google()
@@ -15,9 +16,9 @@ buildscript {
   }
 }
 
-//plugins {
-//  kotlin("jvm")
-//}
+plugins {
+  id("com.google.devtools.ksp") version "1.5.0-1.0.0-alpha09" apply false
+}
 
 allprojects {
   repositories {
